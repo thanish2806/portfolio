@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Playwrite+CL:wght@100..400&family=Playwrite+DK+Uloopet:wght@100..400&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Lugrasimo&family=Playwrite+CL:wght@100..400&family=Playwrite+DK+Uloopet:wght@100..400&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Playwrite+CL:wght@100..400&family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
+<body>   
+</head>
+<body>
+    <div class="navigat">
+        <nav class="navigation">
+            <ul><li><a  href="index.html">Home</a></li>
+                <li><a  href="aboutme.html">About me</a></li>
+                <li><a  href="projects.html">Projects</a></li>
+                <li><a  href="contactme.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>GET IN TOUCH</h1><br>
+    <div class="container">
+    <ul class="icon">
+        <li><img src="linkedin.png" alt=""><a href="https://www.linkedin.com/in/thanish-p-421204200"></a></li>
+        <li><img src="github.png" alt=""><a href="https://github.com/thanish2806"></a></li>
+        <li><img src="instagram.png" alt=""><a href="https://www.instagram.com/thanish_fze/"></a></li>
+        <li><img src="mail.png" alt=""><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"></a></li>
+
+    </ul>
+    </div>
+    <form id="contactForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" placeholder="Enter your query" required></textarea><br><br>
+        <button type="button" onclick="sendToWhatsApp()">Submit</button>
+    </form>
+
+    <script>
+        function sendToWhatsApp() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var whatsappMessage = `Name: ${name}%0aEmail: ${email}%0aMessage: ${message}`;
+            var whatsappURL = `https://wa.me/+919344450207?text=${whatsappMessage}`;
+
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+    <footer>
+        <p class="footer">Copyright © 2024 Techshark digital. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
