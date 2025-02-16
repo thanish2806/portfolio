@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanish - Interactive front-end developer</title>
+    <link rel="icon" href="MY LOGO ICON.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <a href="index.html"><img class="logo" src="MY LOGO ICON.png" alt="Logo"></a>
+            <nav class="menu">
+                <li onclick="showsidebar()"><a href="#"><img src="menu-24.png" alt=""></a></li>
+                <li><a href="#" id="theme-toggle-mob"><img id="theme-mob" src="light-mode.png" alt="Toggle Theme"></a></li>
+            </nav>
+            <nav class="navigation">
+                    <ul>
+                        <li class="navigationpc"><a href="#" id="theme-toggle-pc"><img id="theme-pc" src="light-mode.png" alt="Toggle Theme"></a></li>
+                        <li class="navigationpc" id="contactpc"><a onclick="showMainMenu()">Contact</a></li>
+                        <li class="navigationpc"><a href="#">Experiments</a></li>
+                        <li class="navigationpc"><a href="#projects">Case Studies</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <div>
+                    <ul class="navigationmobile">
+                        <li onclick="hidesidebar()"><a id="close" href="index.html"><img class="closeicon" src="close-icon-light.png" alt=""></a></li>
+                        <li class="menu-options" id="contactmob"><a  onclick="showcontactmenu()">Contact</a></li>
+                        <li class="menu-options"><a href="#">Experiments</a></li>
+                        <li class="menu-options"><a  href="#projects">Case Studies</a></li>
+                    </ul> 
+                    <ul class="menuicons">
+                        <li><a href="https://www.linkedin.com/in/thanish-p-421204200" target="_blank"><img class="linkedin" src="linkedin light.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/thanish2806" target="_blank"><img class="github" src="github-light.png" alt="GitHub"></a></li>
+                        <li><a href="https://www.instagram.com/thanish_fze/" target="_blank"><img class="instagram" src="instagram light.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                <nav id="mainmenu">
+                    <div class="aboutmemenu">
+                        <img class="closeicon" onclick="hidemainmenu(),sidebarunblur()" src="close-icon-light.png" alt="close">
+                        <li><p class="aboutmetext">About me</p></li>
+                        <li><p class="aboutmerole">Interactive Front-end Developer</p></li>
+                        <li><p class="aboutcontent">I'm Thanish, a 20-year-old Indian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
+                        I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
+                        When not working or futzing around with code, I study how to escape from University. Actually for hire.</p></li>
+                        
+                    </div>
+                    
+                    <div class="contactmenu">
+                        <img onclick="hidemainmenu(),sidebarunblur()" src="close-icon-dark.png" alt="close">
+                        <p class="contactmenutitle">Let's Talk.</p>
+                        <p class="contactmenusubtitle">New projects, freelance inquiry or even a coffee.</p>
+                        <form id="contactForm">
+                            
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" placeholder="Enter your query" required></textarea><br><br>
+                            <button type="button" class="Submit" onclick="sendToWhatsApp()">Submit</button>
+                        </form>
+                    </div>
+            
+                </nav>                       
+    </header>
+    <img src="MY LOGO ICON.png" class="background-logo" alt="Thanish's personal logo">
+    
+            
+    
+    <div id="info">
+        <p class="myname">THANISH</p>
+        <p class="myrole">Interactive Front-end Developer</p>
+        
+        <div class="aboutme-btn">
+            <button onclick="showMainMenu()" class="aboutme" type="button">About Me!</button>
+            <img class="aboutme-forward-icon" src="forward icon.png" alt="">
+        </div>
+        <div class="works">
+            <a href="#projects">works</a>
+            <a href="#projects"><img class="arrow" src="arrow.png" alt="Arrow"></a>
+        </div>
+        <p class="credit">© 2025 Thanish</p>
+    </div>
+    <div class="icons">
+        <ul class="icon">
+            <li><a href="https://www.linkedin.com/in/thanish-p-421204200" target="_blank"><img class="linkedin" src="linkedin light.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/thanish2806" target="_blank"><img class="github" src="github-light.png" alt="GitHub"></a></li>
+            <li><a href="https://www.instagram.com/thanish_fze/" target="_blank"><img class="instagram" src="instagram light.png" alt="Instagram"></a></li>
+        </ul>
+    </div>
+    <div class="projects" id="projects">
+        <ul class="project-images">
+
+            <h2>Latest works</h2>
+            <li><a href="https://thanish2806.github.io/Calculator/" target="_blank"><img src="calculator-project.jpeg" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/thanish2806" target="_blank"><img src="cardgame.jpeg" alt="GitHub"></a></li>
+            <li><a href="https://www.instagram.com/thanish_fze/" target="_blank"><img src="samplebg.jpeg" alt="Instagram"></a></li>
+        </ul>
+    </div>
+    <footer>
+        <a href="index.html"><img class="logobottom" src="MY LOGO ICON.png" alt="Logo"></a>
+        <div class="icons-bottom">
+            
+            <ul id="icons-bottom">
+                <li><a href="https://www.linkedin.com/in/thanish-p-421204200" target="_blank"><img class="linkedin" src="linkedin light.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/thanish2806" target="_blank"><img class="github" src="github-light.png" alt="GitHub"></a></li>
+                <li><a href="https://www.instagram.com/thanish_fze/" target="_blank"><img class="instagram" src="instagram light.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <p class="footer">© 2025 Techshark Digital. All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+body{
+    background-image: url("pexels-matheus-oliveira-64077457-10949677.jpg");
+    transform: rotate(-90);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    min-height: 100px;
+    display: flex;
+
+}
+@media screen and (max-width:600px){
+    body{
+        background-image: url("pexels-matheus-oliveira-64077457-10949677.jpg");
+        transform: rotate(-180);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }  
+}
+h1{
+      font-family: "Edu AU VIC WA NT Pre", cursive;
+      font-size: 22px;
+      margin-left: 150px;
+      color: white;
+}
+header{
+    border-radius: 10px;
+}
+.navigation ul{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: none;
+}
+.navigation a{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Playwrite DK Uloopet", cursive;
+}
+.navigation li{
+    float: left;
+}
+@media screen and (max-width:600px) {
+    .navigation ul{
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        background-color: none;
+    }
+}  
+@media screen and (max-width:600px){
+    .navigation a{
+        padding: 7px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Playwrite DK Uloopet", cursive;
+    }
+}
+@media screen and (max-width:600px){
+    .navigation li{
+        float: left;
+    }
+    
+}
+.navigation{
+    text-align: left;
+    vertical-align: top;
+
+
+}
+h2{
+    font-family: Myfonts;
+    font-weight: 400;
+    font-style: normal;
+    top: 20px;
+    position: relative;
+    color: white;
+    margin-left: 20px;
+      
+}
+
+@font-face {
+    font-family: kionaregular;
+    src: url(Kiona-Regular.ttf);
+}
+.calculator{
+    font-family: kionaregular;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+.calculator:hover{
+    cursor: pointer;
+    font-size: 20.5px;
+    text-shadow: 3px 3px 5px white;
+}
+.card_game{
+    font-family: kionaregular;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+.card_game:hover{
+    cursor: pointer;
+    font-size: 20.5px;
+    text-shadow: 3px 3px 5px white;
+}
+.calculator_description{
+    width: 1000px;
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .calculator_description{
+        width: 300px;
+        font-family: "Edu QLD Beginner", cursive;
+        font-optical-sizing: auto;
+        color: white;
+        margin-left: 60px;
+        font-size: 20px;
+    }
+    
+}
+.card_game_description{
+    width: 1000px;
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+    padding-bottom: 210px;
+  
+}
+@media screen and (max-width: 1000px) {
+    .card_game_description{
+        width: 300px;
+        font-family: "Edu QLD Beginner", cursive;
+        font-optical-sizing: auto;
+        color: white;
+        margin-left: 60px;
+        font-size: 20px;
+    }
+    
+}
+@font-face {
+    font-family: Myfonts;
+    src: url(aqua.ttf);
+}
+.footer{
+    color: white;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    top: 50px;
+}
+@media screen and (max-width:600px) {
+    .footer{
+        color: white;
+        background-color: transparent;
+        position: relative;
+        text-align: center;
+        font-size: 10px;
+        top: 20px;
+    }
+    
+}

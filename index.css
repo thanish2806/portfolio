@@ -1,0 +1,964 @@
+:root{
+    --primary-color: #202d4c;
+    --secondary-color: #ebebeb;
+}
+.dark-theme{
+    --primary-color: #ebebeb;
+    --secondary-color: #202d4c;
+}
+body{
+    background-color:var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    min-height: 100px;
+    display: flex;
+	transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+.projects{
+    background-color: var(--secondary-color)
+}
+.background-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -1;
+    height: 270px;
+    width: 270px;
+    margin-top: 50px;
+    opacity: 80%;
+}
+.logo{
+    height: 75px;
+    width: 75px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+/*mobile responsive*/
+.menu li{
+    float: right;
+    list-style-type: none;
+}
+.menu ul{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: none;
+}
+.menu a{
+    padding: 7px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.menu{
+    position: relative;
+    bottom: 50px;
+    right: 10px;
+    display: flex;
+    flex-direction: column ;
+}
+.navigation{
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    right: 250px;
+    bottom: 60px;
+}
+.menu{
+    display: none;
+}
+.navigation ul{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: none;
+}
+.navigation a{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-family: Roliderounded;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.navigationmobile a{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-family: Roliderounded;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.navigation li{
+    float: right;
+}
+nav a:hover{
+    transform: scale(1.05);
+    opacity: 80%;
+
+}
+.navigationmobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+    background-color: #202d4c00;
+    display: none;
+    flex-direction: column ;
+    filter: none;
+}
+.navigationmobile img{
+    width: 30px;
+}
+.menuicons{
+    display: none;
+}
+.menuicons{
+    position: relative;
+    top: 200px;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    flex-direction: row;
+}
+.menuicons img{
+    height: 30px;
+    width: 30px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s;
+}
+.menu-options{
+    position: relative;
+    top: 80px;
+    width: 100%;
+}
+#close{
+    position: relative;
+    text-align: right;
+}
+nav a:active{
+    transform: scale(1.05);
+    opacity: 80%;
+
+}
+
+@font-face {
+    font-family: Roliderounded;
+    src: url(RolideRounded-Regular.otf);
+}
+#theme-pc{
+    bottom: 133px;
+    height: 30px;
+    width: 30px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s;
+}
+p{
+    font-size: small;
+}
+
+
+.myname {
+    font-family: aquafont;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    margin-left: 250px;
+    position: relative;
+}
+.myrole{
+
+        font-family: "Edu QLD Beginner", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 270px;
+        bottom: 70px;
+        position: relative;
+        font-size: 20px;
+}
+
+span.about{
+    font-family: Roliderounded;
+}
+.aboutme {
+    content: '';
+    position: relative;
+    margin-left: 270px;
+    bottom: 50px;
+    height: 40px;
+    width: 140px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7 ;
+    background: linear-gradient(to right, #0016f9, #d10d04);
+    border: none;
+    transition: box-shadow .3s;
+    font-family: Roliderounded;
+    font-size: 17px;
+    z-index: 1;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background -color 0.3s ease-in-out;
+}
+
+.aboutme:hover {
+    cursor: pointer;
+    transition-duration: .3s;
+    box-shadow: 3px 3px 16px rgb(0, 0, 0);
+    display: flex;
+    transform: scale(1.01);
+    
+}
+
+.aboutme-forward-icon {
+    position: relative;
+    margin-left: 250px;
+    bottom: 81px;
+    
+}
+#info{
+    margin-top: -245px;
+    color:var(--secondary-color);
+}
+.icon{
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    background-color: none;
+    right: 30px;
+    bottom: 650px;
+}
+.icon img{
+    height: 30px;
+    width: 30px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s;
+
+}   
+
+.icon img:hover {
+    transform: scale(1.1);
+    opacity: 70%;
+}
+.logo-bottom{
+    align-items: center;
+}
+
+.logobottom{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    
+}
+.icons-bottom{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: none;
+    position: relative;
+}
+.icons-bottom img{
+    height: 35px;
+    width: 35px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s;
+
+}  
+#icons-bottom {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+#icons-bottom li {
+    margin: 10px 0; /* Add some space between the icons */
+}
+.credit{
+    text-align: right;
+    color: var(--secondary-color);
+    right: 20px;
+    bottom: 0px;
+    margin-top: 90px;
+    position: relative;
+
+}
+.works{
+    display: block;
+    position: relative;
+    bottom: 50px;
+}
+.works a{
+    font-size: 25px;
+    font-family: Roliderounded;
+    text-align: center;
+    color: var(--secondary-color);
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+.arrow{
+    position: relative;
+    bottom: 85px;
+}
+#projects{
+    position: relative;
+    bottom: 400px;
+}
+h2{
+    font-size: 30px;
+    font-family: Roliderounded;
+    text-align: center;
+    color: var(--secondary-color);
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+
+}
+@font-face {
+    font-family: kionaregular;
+    src: url(Kiona-Regular.ttf);
+}
+@font-face {
+    font-family: louisgeorgecafe;
+    src: url(Louis\ George\ Cafe.ttf);
+}
+@font-face {
+    font-family: comfortaa-regular;
+    
+    src: url(Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: louisgoergecafebold;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+@font-face {
+    font-family: aquafont;
+    src: url(aqua.ttf);
+}
+@font-face {
+    font-family: azonix;
+    src: url(Azonix.otf);
+}
+.projects{
+    background-color: var(--primary-color);
+}
+.project-images{
+    overflow: hidden;   
+}
+.project-images img{
+    height: 450px;
+    width: 750px;
+    box-shadow: 3px 3px 20px var(--secondary-color);
+    margin: 120px;
+    margin-left: 373px;
+    align-content: center;
+}
+ul{
+    list-style-type: none;
+}
+.calculator:hover{
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 3px 3px 30px var(--secondary-color);
+}
+.cardgame{
+    font-family: kionaregular;
+    color: blue;
+    background-color: var(--secondary-color);
+    border: transparent;
+    font-size: 20px;
+    height: 450px;
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+    box-shadow: 3px 3px 20px var(--secondary-color);
+}
+.cardgame:hover{
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 3px 3px 30px var(--secondary-color);
+}
+#mainmenu {
+    display: none; /* Initially hidden */
+}
+
+.aboutmemenu,
+.contactmenu {
+    display: none; /* Initially hidden */
+}
+.aboutmemenu img{
+    display: none;
+}
+.aboutmemenu{
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    left: 300px;
+    bottom: 60px;
+    z-index: 999;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 30px #1b1b23;
+    display: block;
+    flex-direction: column ;
+    list-style-type: none;
+}
+.aboutmetext{
+    padding-top: 50px;
+    padding-left: 70px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-family: aquafont;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.aboutmerole{
+    padding-left: 70px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-family: louisgeorgecafe;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+.aboutcontent{
+    padding: 70px;
+    padding: 70px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-family: comfortaa-regular;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 13px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+    line-height: 1.6;
+}
+.contactmenu{
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    left: 800px;
+    bottom: 60px;
+    z-index: 999;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 30px #1b1b23;
+    flex-direction: column ;
+    list-style-type: none;
+}
+.contactmenu img{
+    width: 26px;
+    background: transparent;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    margin-left: 390px;
+}
+.contactmenu img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    opacity: 80%;
+}
+#contactForm{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+}
+.contactmenutitle{
+    padding-top: 0px;
+    padding-left: 40px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: aquafont;
+    font-weight: 400;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+.contactmenusubtitle{
+    padding-left: 40px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-family: aquafont;
+    font-style: normal;  
+    margin-right: 20px;
+    opacity: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+label{
+    font-family: louisgoergecafebold;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+#contactForm input{
+    width: 300px;
+    height: 20px;
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-width: 2px;
+    color: var(--primary-color);
+}
+#contactForm textarea{
+    width: 300px;
+    height: 100px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-width: 2px;
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+}
+.Submit{
+    content: '';
+    padding: 15px;
+    height: 36px;
+    width: 100px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7 ;
+    background: linear-gradient(to right, #0016f9, #d10d04);
+    border: none;
+    transition: box-shadow .3s;
+    font-family: Roliderounded;
+    font-size: 17px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background -color 0.3s ease-in-out;
+}
+.footer{
+    color: var(--secondary-color);
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile Menu Icon */
+    .logo{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .navigation{
+        display: block;
+        text-align: right;
+        position: relative;
+        right: 0px;
+        bottom: 110px;
+
+    }
+    #theme-toggle{
+        display: block;
+        right: 20px;
+        bottom: 0px;
+    }
+    .menu{
+        display: block;
+
+    }
+    .menu img{
+        width: 26px;
+   
+    }
+    .menu a:active{
+        transform: scale(1.05);
+        opacity: 80%;
+    
+    }
+    
+    nav{
+        display: block;
+    }
+    .navigationpc {
+        display: none; /* Hide standard nav on mobile */
+    }
+    nav a:active{
+        transform: scale(1.05);
+        opacity: 80%;
+    }
+    .background-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        margin-top: 150px;
+        opacity: 80%;
+    }
+    .myname {
+        font-family: aquafont;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin-left: 40px;
+        position: relative;
+        bottom: 55px;
+    }
+    .myrole {
+        font-family: "Edu QLD Beginner", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 50px;
+        bottom: 70px;
+        position: relative;
+        font-size: 15px;
+    }
+    .aboutme {
+        content: '';
+        position: relative;
+        margin-left: 50px;
+        bottom: 50px;
+        height: 30px;
+        width: 90px;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f7f7f7;
+        background: linear-gradient(to right, #0016f9, #d10d04);
+        border: none;
+        transition: box-shadow .3s;
+        font-family: Roliderounded;
+        font-size: 14px;
+        z-index: 1;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    .aboutme:hover {
+        cursor: pointer;
+        transition-duration: .3s;
+        box-shadow: 3px 3px 16px rgb(0, 0, 0);
+        display: flex;
+        transform: scale(1.01);
+    }
+    .aboutme-forward-icon {
+        position: relative;
+        margin-left: 16px;
+        bottom: 77px;
+        z-index: 0;
+    }
+    .credit{
+        position: relative;
+        bottom: 210px;
+    }
+    #info {
+        margin-top: -200px;
+        color: var(--secondary-color);
+    }
+    .icon{
+        display: none;
+    }
+    #projects{
+        margin-top: 250px;
+        justify-content: center;
+    }
+    h2{
+        font-size: 30px;
+        font-family: Roliderounded;
+        color: var(--secondary-color);
+    }
+    .project-images {
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .project-images img {
+        height: 230px;
+        width: 285px;
+        box-shadow: 3px 3px 20px var(--secondary-color);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 50px 0; /* Add some space between images */
+    }
+    
+    .icons-bottom img{
+        height: 30px;
+        width: 30px;
+        padding: 25px;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s;
+    
+    }  
+    #icons-bottom {
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Arrange items in a column */
+        justify-content: center;/* Center items horizontally */
+    }
+    
+    #icons-bottom li {
+        margin: 10px 0; /* Add some space between the icons */
+    }
+    .works{
+        display: block;
+        position: relative;
+        bottom: 17px;
+    }
+    .works a{
+        font-size: 25px;
+        font-family: Roliderounded;
+        text-align: center;
+        color: var(--secondary-color);
+        position: relative;
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 0px;
+        text-decoration: none;
+    }
+    .aboutmemenu img{
+        display: flex;
+    }
+    .aboutmemenu{
+        height: 600px;
+        width: 350px;
+        position: fixed;
+        left: 20px;
+        bottom: 25px;
+        z-index: 999;
+        background-color: var(--primary-color);
+        box-shadow: 0px 0px 30px #1b1b23;
+        display: none;
+        flex-direction: column ;
+        list-style-type: none;
+    }
+    .aboutmetext{
+        padding-top: 5px;
+        padding-left: 20px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 22px;
+        font-family: aquafont;
+        font-weight: 400;
+        font-style: normal;  
+        margin-right: 20px;
+        opacity: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    .aboutmerole{
+        padding-left: 20px;
+        text-align: left;
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 17px;
+        font-family: louisgeorgecafe;
+        font-weight: 400;
+        font-style: normal;  
+        margin-right: 20px;
+        opacity: 100%;
+        transition: transform 0.3s ease-in-out;
+    
+    }
+    .aboutcontent{
+        padding: 20px;
+        padding: 20px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 15px;
+        font-family: comfortaa-regular;
+        font-weight: 400;
+        font-style: normal;  
+        margin-right: 11px;
+        opacity: 100%;
+        transition: transform 0.3s ease-in-out;
+        line-height: 1.6;
+    }
+    .aboutmemenu img{
+        width: 26px;
+        background: transparent;
+        padding-left: 40px;
+        padding-top: 15px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+        margin-left: 265px;
+    }
+    .contactmenu{
+        height: 600px;
+        width: 350px;
+        position: fixed;
+        bottom: 25px;
+        left: 20px;
+        background-color: var(--secondary-color);
+        box-shadow: 0px 0px 30px #1b1b23;
+        display: none;
+        flex-direction: column ;
+        list-style-type: none;
+    }
+    .contactmenu img{
+        width: 26px;
+        background: transparent;
+        padding-left: 40px;
+        padding-top: 15px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+        margin-left: 265px;
+    }
+    .contactmenu img:hover{
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.05);
+        opacity: 80%;
+    }
+    #contactForm{
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 2px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    
+    }
+    .contactmenutitle{
+        padding-left: 20px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 20px;
+        font-family: aquafont;
+        font-weight: 400;
+        font-style: normal;  
+        margin-right: 20px;
+        opacity: 100%;
+        transition: transform 0.3s ease-in-out;
+    
+    }
+    .contactmenusubtitle{
+        padding-left: 20px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 12px;
+        font-family: aquafont;
+        font-style: normal;  
+        margin-right: 20px;
+        opacity: 100%;
+        transition: transform 0.3s ease-in-out;
+    
+    }
+    label{
+        font-family: louisgoergecafebold;
+        font-size: 14px;
+        color: var(--primary-color);
+    }
+    #contactForm input{
+        width: 300px;
+        height: 20px;
+        background-color: transparent;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-width: 2px;
+        color: var(--primary-color);
+    }
+    #contactForm textarea{
+        width: 300px;
+        height: 80px;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-width: 2px;
+        color: var(--primary-color);
+        background-color: transparent;
+        border-color: var(--primary-color);
+    }
+    .Submit{
+        content: '';
+        padding: 0px;
+        height: 36px;
+        width: 80px;
+        border-radius: 0px;
+        position: relative;
+        bottom: px;
+        color: #f7f7f7 ;
+        background: linear-gradient(to right, #0016f9, #d10d04);
+        border: none;
+        transition: box-shadow .3s;
+        font-family: Roliderounded;
+        font-size: 14px;
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background -color 0.3s ease-in-out;
+    }
+}

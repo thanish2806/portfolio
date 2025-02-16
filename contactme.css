@@ -1,0 +1,161 @@
+body{
+    background-image: url("pexels-matheus-oliveira-64077457-10949677.jpg");
+    transform: rotate(-90);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+@media screen and (max-width:600px){
+    body{
+        background-image: url("pexels-matheus-oliveira-64077457-10949677.jpg");
+        transform: rotate(-180);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }  
+}
+header{
+    border-radius: 10px;
+}
+.navigation ul{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: none;
+}
+.navigation a{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Playwrite DK Uloopet", cursive;
+}
+.navigation li{
+    float: left;
+}
+@media screen and (max-width:600px) {
+    .navigation ul{
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        background-color: none;
+    }
+}  
+@media screen and (max-width:600px){
+    .navigation a{
+        padding: 7px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Playwrite DK Uloopet", cursive;
+    }
+}
+@media screen and (max-width:600px){
+    .navigation li{
+        float: left;
+    }
+    
+}
+.navigation{
+    text-align: left;
+    vertical-align: top;
+
+
+}
+@font-face {
+    font-family: hookana;
+    src: url(hookanaregular-lvkd5.ttf);
+}
+h1{
+    font-family: legand;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+@media screen and (max-width:600px) {
+    h1{
+        font-family: legand;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+}
+@font-face {
+    font-family: legand;
+    src: url(Legand-BF673e953d36757.otf);
+}
+@font-face {
+    font-family: Myfonts;
+    src: url(aqua.ttf);
+}
+div.container{
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+    
+}
+ul.icon{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: none;
+    display: inline-block;
+}
+.icon img{
+    width: 30px;
+    padding: 25px;
+    
+}
+@media screen and (max-width:600px) {
+    .icon img{
+        width: 40px;
+        padding: 25px;
+        
+    }
+    
+}
+.icon img:hover{
+    width: 40px;
+}
+.icon li{
+    float: left;
+    
+}wqqq
+dqwdqwdqw
+
+
+.footer{
+    color: white;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    top: 100px;
+}
+@media screen and (max-width:600px) {
+    .footer{
+        color: white;
+        background-color: transparent;
+        position: relative;
+        text-align: center;
+        font-size: 10px;
+        top: 290px;
+    }
+    
+}
