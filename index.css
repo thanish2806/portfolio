@@ -1,10 +1,10 @@
 :root{
-    --primary-color: #202d4c;
+    --primary-color: #202d4d;
     --secondary-color: #ebebeb;
 }
 .dark-theme{
     --primary-color: #ebebeb;
-    --secondary-color: #202d4c;
+    --secondary-color: #202d4d;
 }
 body{
     background-color:var(--primary-color);
@@ -190,14 +190,14 @@ p{
 }
 .myrole{
 
-        font-family: "Edu QLD Beginner", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        margin-left: 270px;
-        bottom: 70px;
-        position: relative;
-        font-size: 20px;
+    font-family: louisgeorgecafe;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 270px;
+    bottom: 70px;
+    position: relative;
+    font-size: 20px;
 }
 
 span.about{
@@ -669,7 +669,7 @@ label{
         bottom: 55px;
     }
     .myrole {
-        font-family: "Edu QLD Beginner", serif;
+        font-family: louisgeorgecafe;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;

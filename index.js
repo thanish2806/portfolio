@@ -111,3 +111,28 @@ function showcontactmenu(){
     aboutMeMenu.style.display = "none";
     contactMenu.style.display = "block";
 }
+
+
+//SEND TO WHATSAPP
+
+function sendToWhatsApp() {
+    // Get form values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // Ensure all fields are filled
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    // Format the message
+    let text = `Hello, my name is ${name}.%0AEmail: ${email}%0AMessage: ${message}`;
+
+    // Replace with your WhatsApp number (use international format without `+`)
+    let phoneNumber = "919344450207"; // Example: India number (+91)
+
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+}
